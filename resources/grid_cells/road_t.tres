@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Cell" load_steps=3 format=3 uid="uid://dxvtebuvybaip"]
+
+[ext_resource type="Texture2D" uid="uid://gy20xujyb1bp" path="res://sprites/RoadT.png" id="1_7qqhh"]
+[ext_resource type="Script" path="res://scripts/resources/grid_cell.gd" id="2_82kfn"]
+
+[resource]
+script = ExtResource("2_82kfn")
+img = ExtResource("1_7qqhh")
+north_socket = Array[int]([0, 0, 0])
+east_socket = Array[int]([0, 1, 0])
+south_socket = Array[int]([0, 1, 0])
+west_socket = Array[int]([0, 1, 0])

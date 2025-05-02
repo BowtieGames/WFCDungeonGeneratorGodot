@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Cell" load_steps=3 format=3 uid="uid://dal0tsxai8ng7"]
+
+[ext_resource type="Texture2D" uid="uid://clip8jjf3225q" path="res://sprites/GrassSandCorner.png" id="1_b78cw"]
+[ext_resource type="Script" path="res://scripts/resources/grid_cell.gd" id="2_mg4x5"]
+
+[resource]
+script = ExtResource("2_mg4x5")
+img = ExtResource("1_b78cw")
+north_socket = Array[int]([2, 2, 2])
+east_socket = Array[int]([2, 2, 2])
+south_socket = Array[int]([0, 0, 0])
+west_socket = Array[int]([0, 0, 0])
