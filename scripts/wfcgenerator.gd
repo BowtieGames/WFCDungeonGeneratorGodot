@@ -7,8 +7,8 @@ class_name WFCGenerator extends TileMapLayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for y in range(20):
-		for x in range(20):
+	for y in range(40):
+		for x in range(60):
 			collapse(Vector2i(x, y))
 	#set_cell(Vector2i(0,0), 0, Vector2i(randi_range(0, cell_set.size()), 0))
 	# surface_tile_data.set_custom_data("ElementalState", new_element)
