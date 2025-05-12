@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="WFCDungeonGenerator"
+run/main_scene="res://scenes/default_scene.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://sprites/icon.svg"
 

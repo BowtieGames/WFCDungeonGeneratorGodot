@@ -43,7 +43,9 @@ var faces : Array[Array] = [
 ## Checks if this face matches the other's socket
 ## Other should be the other cell's list of faces
 ## Face should be the face on self that we are matching with
-func match(other: Array[Array], face: Face) -> bool:
-	var reverse: Array[Terrain] = other[face].duplicate()
+static func match(this: Array[Terrain], other: Array[Terrain]) -> bool: #TODO: CHANGE CELL, CAUSING DEFAULTS
+	# Get the opposite face on the other cell
+	var reverse: Array[Terrain] = other.duplicate(true)
 	reverse.reverse()
-	return self.faces[face] == reverse
+	var pair: bool = this == reverse
+	return this == reverse
